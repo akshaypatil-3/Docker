@@ -1,3 +1,3 @@
 FROM centos:7
 RUN yum install httpd -y
-CMD ["systemctl", "start", "service"]
+CMD ["systemctl", "start", "httpd"]
