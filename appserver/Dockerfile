@@ -5,6 +5,6 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.ta
 RUN tar -xvf apache-tomcat-8.5.83.tar.gz -C /opt
 WORKDIR /opt
 RUN mv /opt/apache-tomcat* /opt/apache-tomcat
-COPY ../index.html /opt/apach-tomcat/webapps/student.war
+COPY ../student.war /opt/apach-tomcat/webapps/student.war
 EXPOSE 8080
 CMD ["/opt/apache-tomcat/bin/catalina.sh", "run"]
