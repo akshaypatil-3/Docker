@@ -7,4 +7,5 @@ WORKDIR /opt
 RUN mv /opt/apache-tomcat* /opt/apache-tomcat
 COPY ./student.war /opt/apach-tomcat/webapps/student.war
 EXPOSE 8080
-CMD ["/opt/apache-tomcat/bin/catalina.sh", "run"]
+# CMD ["/opt/apache-tomcat/bin/catalina.sh", "run"]
+ENTRYPOINT ["/opt/apache-tomcat/bin/catalina.sh", "run"]
